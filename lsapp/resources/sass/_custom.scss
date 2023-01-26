@@ -1,0 +1,72 @@
+$primary-color: rgb(12, 41, 12);
+$light-yellow: rgb(255, 255, 175);
+$lemon: rgb(157, 255, 0);
+
+
+body {
+    background-color: $primary-color;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    color: rgb(25, 80, 25);
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 50;
+    color: $light-yellow;
+    font-size: 2.8rem;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+  .text-lemon {
+      color: $lemon;
+  }
+  .featured-posts {
+      background-color: $primary-color;
+  }
+//for the index  
+.article-list {
+  border: 0;
+  overflow: hidden;
+}
+.article-list:hover {
+    background-color: $lemon;
+}
+
+//for the show
+.post-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
